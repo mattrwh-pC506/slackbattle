@@ -25,7 +25,12 @@ SECRET_KEY = 'h6r0$8-a%k=5wiia+9grl!10f6=5!8$&atkv^7^3-i147svv+!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+        "cmd-battle.herokuapp.com",
+        "cmd-battle.dev.herokuapp.com",
+        "localhost",
+        "127.0.0.1",
+        ]
 
 
 # Application definition
