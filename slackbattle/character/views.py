@@ -22,7 +22,7 @@ def character(request):
     text = ""
 
     if request.POST:
-        text = body.POST.get("text")
+        text = request.POST.get("text")
         print ("text1", text)
     else:
         body = json.loads(request.body.decode(encoding='UTF-8'))
