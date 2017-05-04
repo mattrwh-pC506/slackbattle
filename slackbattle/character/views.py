@@ -23,6 +23,8 @@ def character(request):
 
     if request.POST:
         text = request.POST.get("text")
+        params = request.POST
+        print ("PARAMS", params)
         print ("text1", text)
     else:
         body = json.loads(request.body.decode(encoding='UTF-8'))
