@@ -19,8 +19,11 @@ FIELDS = {
         }
 
 def character(request):
-    body = json.loads(request.body.decode(encoding='UTF-8'))
-    text = body.get("text", "")
+    if request.POST:
+        text = body.POST.get("text")
+    else:
+        body = json.loads(request.body.decode(encoding='UTF-8'))
+        text = body.get("text", "")
     words = text.split(" ")
     new_char = Character()
 
