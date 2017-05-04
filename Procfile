@@ -1,1 +1,1 @@
-web: python slackbattle/manage.py runserver
+web: gunicorn slackbattle/slackbattle/wsgi.py runserver
