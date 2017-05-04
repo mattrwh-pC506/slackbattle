@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
         "cmd-battle.herokuapp.com",
-        "cmd-battle.dev.herokuapp.com",
+        "cmd-battle-dev.herokuapp.com",
         "localhost",
         "127.0.0.1",
         ]
