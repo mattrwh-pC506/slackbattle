@@ -1,1 +1,1 @@
-web: cd slackbattle && gunicorn slackbattle.wsgi runserver
+web: cd slackbattle && python manage.py migrate && gunicorn slackbattle.wsgi runserver
